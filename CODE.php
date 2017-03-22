@@ -13,10 +13,3 @@ if($_POST['Submit'] == 'Submit') { // check for form submit
         } 
     }
 ?>
-<html>
-	<form name="loginform" method="post" action="CODE.php">
-	Username :<input type="text" name="user" /><br />
-	Password :<input type="text" name="pass" /><br />
-	<input type="submit" name="Submit" value="Submit" />
-	</form>
-</html>
