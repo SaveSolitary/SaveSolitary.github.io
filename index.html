@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Save Solitary</title>
@@ -45,26 +44,25 @@
     </head>
     <body>
 
-    <p id="reality"></p>
-        
-        <style>
-            p {
-                text-align: center;
-                font-size: 60px;
-                margin-top: 0px;
-                font-family: Arial, Helvetica;
-                color: #999999;
-              }
-        </style>
-        
-    <script>
-    var countDownDate = new Date("Sep 27, 2019 00:00:00").getTime();
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #00ff00;
+}
+</style>
+<p id="reality"></p>
 
-    var x = setInterval(function() {
+<script>
+var countDownDate = new Date("Sep 27, 2019 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
     
-    var now = new Date().getTime();
-        
-    var distance = countDownDate - now;
+  var distance = countDownDate - now;
     
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -73,32 +71,26 @@
     
   document.getElementById("reality").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-        
+
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("reality").innerHTML = "0 0 0 0 0 0 0 0 0";
+    document.getElementById("reality").innerHTML = "000000000";
   }
 }, 1000);
 </script>
 
 </body>
-    <body>
-        <style>
-            p {
-                font-family: Arial, Helvetica;
-                color: #999999;
-                font-size: 12px;
-              }
-        </style>
+	<body>
         <div class="container">
             <img class="ri" src="Loading_SYST_5-0.gif" alt="" />
-            <p class="footer">[ O ] Twitter: <a target="_blank" href="https://twitter.com/save_solitary">@Save_Solitary</a>,
+            <p class="footer" style="font-family:arial,helvetica;color:#999999;font-size:12px;">[ O ] Twitter: <a target="_blank" href="https://twitter.com/save_solitary">@Save_Solitary</a>,
                 Facebook: <a target="_blank" href="https://fb.com/SaveSolitarySaveVal">SaveSolitarySaveVal</a>, 
                 YouTube: <a target="_blank" href="https://www.youtube.com/channel/UCtV_xtYjIcyoftUFxcqNIiA">SaveSolitary</a>, 
                 and the reddit: <a target="_blank" href="https://www.reddit.com/user/SaveSolitary/">/user/SaveSolitary/</a>. 
                 Don't know what Solitary is? Find the <a target="_blank" href="https://en.wikipedia.org/wiki/Solitary_(TV_series)">Wiki here.</a>
             </p>
         </div>
+  </body>
         <script>
         $('body').flowtype({
         minimum : 500,
@@ -108,5 +100,5 @@
          fontRatio : 30
         });
         </script>
-    </body>
+
 </html>
